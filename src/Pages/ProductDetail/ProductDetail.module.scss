@@ -1,0 +1,28 @@
+@import "../../styles/themes.scss";
+
+.container {
+    border: 1px solid var(--cart-border);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+
+    .title {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .discription {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .btn{
+        border: 1px solid var(--cart-border);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+}

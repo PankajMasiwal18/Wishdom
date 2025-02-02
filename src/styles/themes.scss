@@ -1,0 +1,11 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --cart-border:  #000000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --cart-border:  #ffffff;
+}

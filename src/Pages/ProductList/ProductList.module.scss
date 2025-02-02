@@ -1,0 +1,63 @@
+@import "../../styles//themes.scss";
+
+.searchInput{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.categoryContainer{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    @media  screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+.categoryItem{
+    text-align: left;
+}
+
+.activeCategoryItem{
+    text-align: left;
+    font-weight: 700;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        border: 1px solid var(--cart-border);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        .title{
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .btn{
+            border: 1px solid var(--cart-border);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    }
+}
